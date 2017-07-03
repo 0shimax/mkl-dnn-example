@@ -32,7 +32,8 @@
     - exampleではfor文で回して入れてる
 - 層で保持するデータのメモリ確保
     - MKL-DNNの`memory`APIを使ってconv_user_src_memoryのように確保
-    - おそらくbackwordなどで使用するために確保しておく
+    - ~~おそらくbackwordなどで使用するために確保しておく~~
+    - backwordでも同じように定義しているため、作業用のメモリの確保なのかもしれない
 - 各層のmemory descriptorの定義
     - user_memory_descriptorと同じような処理をもう一度書く
     - ただし、アウトプット側のdescriptorも必要
